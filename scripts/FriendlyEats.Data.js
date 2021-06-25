@@ -19,6 +19,8 @@ FriendlyEats.prototype.addRestaurant = function(data) {
   /*
     TODO: Implement adding a document
   */
+ var collection = firebase.firestore().collection('restaurents');
+ return collection.add(data);
 };
 
 FriendlyEats.prototype.getAllRestaurants = function(renderer) {

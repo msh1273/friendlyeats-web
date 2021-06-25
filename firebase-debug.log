@@ -1,0 +1,55 @@
+[debug] [2021-06-25T05:41:32.945Z] ----------------------------------------------------------------------
+[debug] [2021-06-25T05:41:32.947Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start --only hosting
+[debug] [2021-06-25T05:41:32.947Z] CLI Version:   9.14.0
+[debug] [2021-06-25T05:41:32.947Z] Platform:      darwin
+[debug] [2021-06-25T05:41:32.947Z] Node Version:  v14.17.1
+[debug] [2021-06-25T05:41:32.948Z] Time:          Fri Jun 25 2021 14:41:32 GMT+0900 (대한민국 표준시)
+[debug] [2021-06-25T05:41:32.948Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-25T05:41:32.956Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-25T05:41:32.956Z] > authorizing via signed-in user (seokho@comcom.ai)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2021-06-25T05:41:32.976Z] [hub] writing locator at /var/folders/bk/_fn4_71n4gj8sk99hk9kvc840000gn/T/hub-aisearch-2adce.json
+[debug] [2021-06-25T05:41:33.237Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/aisearch-2adce/sites 
+[debug] [2021-06-25T05:41:34.362Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/aisearch-2adce/sites 200
+[debug] [2021-06-25T05:41:34.362Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/aisearch-2adce/sites {"sites":[{"name":"projects/966001967689/sites/aisearch-2adce","defaultUrl":"https://aisearch-2adce.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2021-06-25T05:41:34.362Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/aisearch-2adce/webApps/-/config [none]
+[debug] [2021-06-25T05:41:35.888Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/aisearch-2adce/webApps/-/config 200
+[debug] [2021-06-25T05:41:35.888Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/aisearch-2adce/webApps/-/config {"projectId":"aisearch-2adce","appId":"1:966001967689:web:85d1f5c8b8fcb78d9ff598","storageBucket":"aisearch-2adce.appspot.com","locationId":"us-central","apiKey":"AIzaSyBNJID2ZGsRczwY3RDScjz9C_7MBa40KuA","authDomain":"aisearch-2adce.firebaseapp.com","messagingSenderId":"966001967689","measurementId":"G-1WHBCV3TSG"}
+[info] i  hosting: Serving hosting files from: ./ {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m./\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ localhost:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: None
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] "GET / HTTP/1.1" 200 14287 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] \"GET / HTTP/1.1\" 200 14287 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36\""}}
+[debug] [2021-06-25T05:41:38.614Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js [none]
+[debug] [2021-06-25T05:41:38.617Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js [none]
+[info] i  hosting: 127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] "GET /__/firebase/init.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] \"GET /__/firebase/init.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36\""}}
+[debug] [2021-06-25T05:41:38.620Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js [none]
+[info] i  hosting: 127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] "GET /scripts/FriendlyEats.js HTTP/1.1" 200 3819 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] \"GET /scripts/FriendlyEats.js HTTP/1.1\" 200 3819 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] "GET /scripts/FriendlyEats.View.js HTTP/1.1" 200 14941 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] \"GET /scripts/FriendlyEats.View.js HTTP/1.1\" 200 14941 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] "GET /scripts/FriendlyEats.Mock.js HTTP/1.1" 200 2239 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] \"GET /scripts/FriendlyEats.Mock.js HTTP/1.1\" 200 2239 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] "GET /scripts/FriendlyEats.Data.js HTTP/1.1" 200 1470 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] \"GET /scripts/FriendlyEats.Data.js HTTP/1.1\" 200 1470 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36\""}}
+[debug] [2021-06-25T05:41:38.761Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js 200
+[debug] [2021-06-25T05:41:38.761Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js [stream]
+[debug] [2021-06-25T05:41:38.768Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js 200
+[debug] [2021-06-25T05:41:38.768Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js [stream]
+[debug] [2021-06-25T05:41:38.773Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js 200
+[debug] [2021-06-25T05:41:38.773Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js [stream]
+[info] i  hosting: 127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] "GET /__/firebase/8.6.8/firebase-app.js HTTP/1.1" 200 6969 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] \"GET /__/firebase/8.6.8/firebase-app.js HTTP/1.1\" 200 6969 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] "GET /__/firebase/8.6.8/firebase-auth.js HTTP/1.1" 200 56901 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] \"GET /__/firebase/8.6.8/firebase-auth.js HTTP/1.1\" 200 56901 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] "GET /__/firebase/8.6.8/firebase-firestore.js HTTP/1.1" 200 93246 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] \"GET /__/firebase/8.6.8/firebase-firestore.js HTTP/1.1\" 200 93246 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] "GET /images/favicon.ico HTTP/1.1" 200 1150 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Jun/2021:05:41:38 +0000] \"GET /images/favicon.ico HTTP/1.1\" 200 1150 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36\""}}
